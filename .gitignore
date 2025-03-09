@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Firebase configuration files
+firebaseConfig.js
+
+# Build files
+build/
+
+# Log files
+npm-debug.log
+
+# Environment variables
+.env
