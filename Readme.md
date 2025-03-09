@@ -1,25 +1,60 @@
-# OXTA VISUALS AI  
+Install Dependencies
 
-OXTA VISUALS AI is an AI-powered image generation platform that allows users to create high-quality images using text prompts. It features user authentication, a user-friendly dashboard, and a modern UI.  
+npm install
 
-## Features  
+Set Up Environment Variables
 
-✅ **AI Image Generation** – Enter a text prompt to generate unique images.  
-✅ **User Authentication** – Sign up and log in with Google or email/password.  
-✅ **User Dashboard** – View, manage, and download generated images.  
-✅ **Gallery** – Browse AI-generated images from users.  
-✅ **Sharing Options** – Save images to the dashboard, download, or share.  
+Create a .env file and add your API keys:
 
-## Tech Stack  
+REACT_APP_FIREBASE_API_KEY=your_firebase_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_BACKEND_URL=http://localhost:5000
 
-- **Frontend**: React.js / Next.js  
-- **Backend**: Node.js + Express  
-- **Database**: Firebase / MongoDB  
-- **Hosting**: Vercel / Netlify (Frontend), AWS / Google Cloud (Backend)  
+Start the Development Server
 
-## Installation  
+npm start
 
-### Clone the Repository  
-```bash
-git clone https://github.com/PREM-O7/OXTA-VISUALS-AI.git
-cd OXTA-VISUALS-AI
+API Endpoints
+
+Generate Image
+
+POST /generate
+Request Body:
+
+{
+  "prompt": "A futuristic cityscape with neon lights"
+}
+
+Response:
+
+{
+  "imageUrl": "https://generated-image-url.com/image.png"
+}
+
+Deployment
+
+Frontend (Vercel)
+
+vercel deploy
+
+Backend (Render / AWS)
+
+node server.js
+
+Screenshots
+
+Coming soon...
+
+Contributing
+
+1. Fork the repo
+
+
+2. Create a new branch (feature-branch)
+
+
+3. Commit your changes
+
+
+4. Open a pull request
+5. 
